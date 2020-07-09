@@ -21,17 +21,26 @@ module.exports = {
       {
         test: /\.(css)$/,
         exclude: /node_modules/,
-        use: [
-          // 2) Load styles as css file
-          MiniCssExtractPlugin.loader,
+        oneOf: [
           {
-            // 1) First Read the css file, make it module, hash className
-            loader: "css-loader",
-            options: {
-              modules: {
-                localIdentName: "[path]___[name]__[local]___[hash:base64:5]",
+            resourceQuery: /raw/,
+            use: [MiniCssExtractPlugin.loader, "css-loader"],
+          },
+          {
+            use: [
+              // 2) Load with style tag
+              MiniCssExtractPlugin.loader,
+              {
+                // 1) First Read the css file, make it module, hash className
+                loader: "css-loader",
+                options: {
+                  modules: {
+                    localIdentName:
+                      "[path]___[name]__[local]___[hash:base64:5]",
+                  },
+                },
               },
-            },
+            ],
           },
         ],
       },
