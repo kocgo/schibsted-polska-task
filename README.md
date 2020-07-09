@@ -8,7 +8,7 @@
    - [x] Setup Dev and Prod configs/scripts for webpack
 
 2) Set Testing Suite for React
-   - [x] Install react-testing-library
+   - [x] Install Jest, react-testing-library -> create __tests__ folder
    - [x] POC Test on App.js
 
 3) Create API
@@ -29,17 +29,23 @@
    - [x] Feature on webpack to import raw CSS files (example import "App.css?raw")
    - [x] Create and import reset.css
    
-6) React Components
-   - [ ] Create SearchBox Component
-   - [ ] Mobile First Fluid FlexBox (with wrapping) styling
-   - [ ] Lazy Load Images with Intersection Observer API
-   - [ ] Debounce SearchBox Input
+6) React App
+   - [X] Color Palette in root css
+   - [X] Apply Neumorphism to searchbox
+   - [X] Install Axios
+   - [X] Debounce SearchBox Input
+   - [X] Create SearchBox Component
+   - [X] Create ResultsViewer Component
+   - [X] Mobile First Fluid FlexBox (with wrapping) styling
+   - [X] Lazy Load Images
 
 7) Deployment
    - [ ] Deploy API
    - [ ] Deploy React-App
-  
-8) Containerization
+   
+8) Additional Features
+   - [ ] Test SearchBox Component
+   - [ ] Test ResultsViewer Component
+   - [ ] Infinite Loader
    - [ ] Dockerize React App
    - [ ] Dockerize Api
-   
