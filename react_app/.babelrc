@@ -4,5 +4,11 @@
     "@babel/preset-env", 
     // JSX
     "@babel/preset-react"
+  ],
+  "plugins": [
+    ["babel-plugin-react-css-modules", {
+      "webpackHotModuleReloading": true,
+      "autoResolveMultipleImports": true
+    }]
   ]
 }

@@ -20,6 +20,23 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(css)$/,
+        exclude: /node_modules/,
+        use: [
+          // 2) Load with style tag
+          "style-loader",
+          {
+            // 1) First Read the css file, make it module, hash className
+            loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: "[path]___[name]__[local]___[hash:base64:5]",
+              },
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
