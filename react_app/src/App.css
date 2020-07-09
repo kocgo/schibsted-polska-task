@@ -1,3 +1,16 @@
 .App {
-  background: green;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background: var(--blue);
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App__inner {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
 }
