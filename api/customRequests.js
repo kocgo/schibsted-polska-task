@@ -1,12 +1,11 @@
 const axios = require("axios");
-const { query } = require("express");
 
-const queryGiphy = async (searchTerm, limit = 100, offset = 0) => {
+const queryGiphy = async (searchTerm, key, limit = 20, offset = 0) => {
   return new Promise(async (resolve, reject) => {
     // Get All Results (as objects)
     let giphyResults = await axios.get(`https://api.giphy.com/v1/gifs/search`, {
       params: {
-        api_key: process.env.GIPHY_API_KEY,
+        api_key: key,
         q: searchTerm,
         limit: limit,
         offset: offset,
@@ -24,6 +23,30 @@ const queryGiphy = async (searchTerm, limit = 100, offset = 0) => {
   });
 };
 
+const queryPixabay = async (searchTerm, key, limit = 20, offset = 0) => {
+  return new Promise(async (resolve, reject) => {
+    // Get All Results (as objects)
+    let pixabayResults = await axios.get(`https://pixabay.com/api/`, {
+      params: {
+        key: key,
+        q: searchTerm,
+        per_page: limit,
+        page: offset / limit + 1,
+        rating: "g",
+        lang: "en",
+      },
+    });
+
+    // Get only the links of the objects
+    let linksOnly = pixabayResults.data.hits.map(
+      (imageObject) => imageObject.webformatURL
+    );
+
+    resolve(linksOnly);
+  });
+};
+
 module.exports = {
   queryGiphy,
+  queryPixabay,
 };
