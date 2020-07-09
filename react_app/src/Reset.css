@@ -60,3 +60,12 @@ ol,
 ul {
   list-style: none;
 }
+
+/* Color Palette */
+:root {
+  --blue: #bbdef0;
+  --green: #00a6a6;
+  --yellow: #efca08;
+  --orange: #f49f0a;
+  --tangerine: #f08700;
+}
