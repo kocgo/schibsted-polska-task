@@ -26,10 +26,10 @@
    - [x] Pixabay Endpoint Test
    
 5) Css Reset
-    - [ ] Import raw CSS files (example import "App.css?raw")
-    - [ ] Create and import reset.css
+   - [x] Feature on webpack to import raw CSS files (example import "App.css?raw")
+   - [x] Create and import reset.css
    
-6) React Component with pagination
+6) React Components
    - [ ] Create SearchBox Component
    - [ ] Mobile First Fluid FlexBox (with wrapping) styling
    - [ ] Lazy Load Images with Intersection Observer API
