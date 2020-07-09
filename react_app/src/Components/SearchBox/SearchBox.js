@@ -3,11 +3,12 @@ import { searchImages } from "../../Requests/searchImages";
 import { debounce } from "../../helperFunctions";
 import styles from "./SearchBox.css";
 
-const SearchBox = () => {
+const SearchBox = ({ setSearchResults }) => {
   // Debounce Search Input
-  let debouncedInputChange = debounce((searchTerm) => {
+  let debouncedInputChange = debounce(async (searchTerm) => {
     if (!searchTerm) return;
-    searchImages(searchTerm);
+    let results = await searchImages(searchTerm);
+    setSearchResults(results || []);
   }, 500);
 
   return (

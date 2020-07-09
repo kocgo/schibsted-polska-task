@@ -6,7 +6,7 @@ export const searchImages = (searchTerm) => {
     let results = await Axios.get(
       `http://${api_url}/search-images?searchTerm=${searchTerm}`
     );
-    console.log(results);
-    resolve(results);
+    console.log(results.data);
+    resolve(results.data);
   });
 };

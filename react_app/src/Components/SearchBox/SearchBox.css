@@ -3,7 +3,7 @@
   width: 100%;
   height: 100px;
   background-color: grey;
-  border-radius: 60px;
+  border-radius: 25px;
   background: var(--blue);
   box-shadow: 5px 5px 25px #8ca7b4, -5px -5px 25px #eaffff;
   padding: 10px;
@@ -19,7 +19,7 @@
   margin-top: 10px;
   height: 100px;
   width: 90%;
-  border-radius: 60px;
+  border-radius: 20px;
   background: #dfeff7;
   box-shadow: inset 20px 20px 60px #becbd2, inset -20px -20px 60px #ffffff;
   overflow: hidden;
@@ -40,7 +40,7 @@
 
 .searchInput__input:focus-within {
   cursor: text;
-  border-radius: 50px;
+  border-radius: 20px;
   background: #edf5fa;
   box-shadow: inset 20px 20px 60px #eef1f3, inset -20px -20px 60px #ffffff;
 }

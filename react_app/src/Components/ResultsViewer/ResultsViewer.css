@@ -1,0 +1,44 @@
+.wrapper {
+  line-height: 0;
+  margin-top: 15px;
+  max-width: 900px;
+  column-count: 1;
+  column-gap: 0;
+}
+
+.frame {
+  margin: 10px;
+  max-width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  display: flex;
+}
+
+.frame img:hover {
+  transition: opacity ease 0.7s;
+  opacity: 0.7;
+}
+
+.frame img {
+  width: 100%;
+  height: auto;
+}
+
+/* Masonry */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .wrapper {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .wrapper {
+    column-count: 2;
+  }
+}
