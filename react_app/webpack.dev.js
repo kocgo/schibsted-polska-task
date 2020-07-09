@@ -1,6 +1,10 @@
 const path = require("path");
 
 module.exports = {
+  mode: "development",
+  devServer: {
+    writeToDisk: true,
+  },
   entry: "./src/App.js",
   output: {
     filename: "bundle.js",

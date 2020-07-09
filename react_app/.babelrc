@@ -1,3 +1,8 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": [
+    // Modern JS to -> ES5 
+    "@babel/preset-env", 
+    // JSX
+    "@babel/preset-react"
+  ]
 }
