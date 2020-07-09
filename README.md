@@ -8,8 +8,8 @@
    + Setup Dev and Prod configs/scripts for webpack
 
 2) Set Testing Suite for React
-   - Install react-testing-library
-   - POC Test on App.js
+   + Install react-testing-library
+   + POC Test on App.js
 
 3) Create API
   - Set Express
