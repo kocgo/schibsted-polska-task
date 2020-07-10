@@ -1,6 +1,21 @@
 ### Demo
 https://kocgo.github.io/schibsted-polska-task/
 
+I have created tasks on this readme file ,
+then started with creating the development environment for the React application.
+
+The testing suite is ready but more time is required for test-per-component approach.
+
+Also I have left the .env file visible for this particular task while being aware it shouldn't be in the repository in a prod environment.
+
+I have deployed the API on my own server with nginx and deployed the react-app on github-pages.
+
+I tried to get InfiniteLoader work, but failed, I have ran into closure problems with the hooks. Found a solution already on a blog post (it is in the InfiniteLoader component)
+
+Most challenging part was the reverse proxying the nginx and InfiniteLoader.
+
+Example: www.gokhankoc.pl/schibstedtask/searchImages?searchTerm=sauce
+ 
 1) Create Webpack Workflow
    - [x] Webpack, webpack dev server install and setup script
    - [x] Babel & React Setup (React, ReactDOM, @babel/core, babel-loader, @babel/preset-env, @babel/preset-react)
