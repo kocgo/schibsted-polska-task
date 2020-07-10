@@ -11,10 +11,10 @@ const { queryGiphy, queryPixabay } = require("./customRequests");
 app.use(cors());
 app.options("*", cors());
 
-app.get("/search-images", async (req, res) => {
+app.get("/schibstedtask/searchImages", async (req, res) => {
   console.log("recieved request");
   let { searchTerm, offset, limit } = req.query;
-
+  console.log("search term: ", searchTerm);
   if (!searchTerm) return res.send("Please provide a search term.");
 
   let allResultsCombined = await Promise.all([
@@ -22,7 +22,7 @@ app.get("/search-images", async (req, res) => {
     queryPixabay(searchTerm, process.env.PIXABAY_API_KEY, offset),
   ]);
   // Return concat results
-  return res.json(allResultsCombined.flat());
+  return res.json([].concat(...allResultsCombined));
 });
 
 app.listen(port, () => {
