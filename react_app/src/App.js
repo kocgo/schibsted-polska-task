@@ -10,18 +10,26 @@ import InfiniteLoader from "./Components/InfiniteLoader/InfiniteLoader";
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
   const [offset, setOffset] = useState(0);
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
     <div styleName="App">
       <div styleName="App__inner">
         <SearchBox
           searchResults={searchResults}
-          setOffset={setOffset}
           setSearchResults={setSearchResults}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
         />
 
         <ResultsViewer searchResults={searchResults} />
-        <InfiniteLoader />
+        {/* <InfiniteLoader
+          searchResults={searchResults}
+          setSearchResults={setSearchResults}
+          searchQuery={searchQuery}
+          offset={offset}
+          setOffset={setOffset}
+        /> */}
       </div>
     </div>
   );
