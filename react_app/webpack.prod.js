@@ -48,13 +48,13 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyPlugin({
-      patterns: [{ from: "dist", to: path.resolve(__dirname, "../docs") }],
-    }),
     new MiniCssExtractPlugin(),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "dist", to: path.resolve(__dirname, "../docs") }],
     }),
   ],
 };
