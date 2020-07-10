@@ -44,6 +44,7 @@
    - [ ] Deploy React-App
    
 8) Additional Features
+   - [x] Use Promise.all to do two requests async 
    - [ ] Test SearchBox Component
    - [ ] Test ResultsViewer Component
    - [ ] Infinite Loader
