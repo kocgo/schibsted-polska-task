@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const queryGiphy = async (searchTerm, key, limit = 20, offset = 0) => {
+const queryGiphy = async (searchTerm, key, offset = 0, limit = 5) => {
   return new Promise(async (resolve, reject) => {
     // Get All Results (as objects)
     let giphyResults = await axios
@@ -27,7 +27,7 @@ const queryGiphy = async (searchTerm, key, limit = 20, offset = 0) => {
   });
 };
 
-const queryPixabay = async (searchTerm, key, limit = 20, offset = 0) => {
+const queryPixabay = async (searchTerm, key, offset = 0, limit = 5) => {
   return new Promise(async (resolve, reject) => {
     // Get All Results (as objects)
     let pixabayResults = await axios

@@ -13,18 +13,16 @@ app.options("*", cors());
 
 app.get("/search-images", async (req, res) => {
   console.log("recieved request");
-  let { searchTerm, limit, offset } = req.query;
+  let { searchTerm, offset, limit } = req.query;
 
   if (!searchTerm) return res.send("Please provide a search term.");
 
-  let resultsFromGiphy =
-    (await queryGiphy(searchTerm, process.env.GIPHY_API_KEY)) || [];
-
-  let resultsFromPixabay =
-    (await queryPixabay(searchTerm, process.env.PIXABAY_API_KEY)) || [];
-
+  let allResultsCombined = await Promise.all([
+    queryGiphy(searchTerm, process.env.GIPHY_API_KEY, offset),
+    queryPixabay(searchTerm, process.env.PIXABAY_API_KEY, offset),
+  ]);
   // Return concat results
-  return res.json([...resultsFromPixabay, ...resultsFromGiphy]);
+  return res.json(allResultsCombined.flat());
 });
 
 app.listen(port, () => {
