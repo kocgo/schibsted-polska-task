@@ -43,8 +43,8 @@ https://kocgo.github.io/schibsted-polska-task/
    - [X] Lazy Load Images
 
 7) Deployment
-   - [ ] Deploy API
-   - [ ] Deploy React-App
+   - [X] Deploy API
+   - [X] Deploy React-App
    
 8) Additional Features
    - [x] Use Promise.all to do two requests async 
