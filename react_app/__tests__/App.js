@@ -5,5 +5,7 @@ import App from "../src/App.js";
 
 test("App Component renders", () => {
   render(<App />);
-  expect(screen.queryByText("First Component Appears")).toBeInTheDocument();
+  expect(
+    screen.queryByText("Please enter a query to search:")
+  ).toBeInTheDocument();
 });

@@ -6,9 +6,13 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    ["babel-plugin-react-css-modules", {
+    ["babel-plugin-react-css-modules",
+       {
       "webpackHotModuleReloading": true,
       "autoResolveMultipleImports": true
+    }],
+    ["@babel/plugin-transform-runtime", {
+      "regenerator": true
     }]
   ]
 }

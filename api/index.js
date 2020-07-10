@@ -9,21 +9,19 @@ const { queryGiphy, queryPixabay } = require("./customRequests");
 
 // All Origins Allowed
 app.use(cors());
+app.options("*", cors());
 
 app.get("/search-images", async (req, res) => {
+  console.log("recieved request");
   let { searchTerm, limit, offset } = req.query;
 
   if (!searchTerm) return res.send("Please provide a search term.");
 
-  let resultsFromGiphy = await queryGiphy(
-    searchTerm,
-    process.env.GIPHY_API_KEY
-  );
+  let resultsFromGiphy =
+    (await queryGiphy(searchTerm, process.env.GIPHY_API_KEY)) || [];
 
-  let resultsFromPixabay = await queryPixabay(
-    searchTerm,
-    process.env.PIXABAY_API_KEY
-  );
+  let resultsFromPixabay =
+    (await queryPixabay(searchTerm, process.env.PIXABAY_API_KEY)) || [];
 
   // Return concat results
   return res.json([...resultsFromPixabay, ...resultsFromGiphy]);
