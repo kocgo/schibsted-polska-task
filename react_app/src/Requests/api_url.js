@@ -1,1 +1,1 @@
-export const api_url = "https://www.gokhankoc.pl/schibstedAPI";
+export const api_url = "http://159.89.102.25:6666";

@@ -1217,7 +1217,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"api_url\", function() { return api_url; });\nvar api_url = \"https://www.gokhankoc.pl/schibstedAPI\";\n\n//# sourceURL=webpack:///./src/Requests/api_url.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"api_url\", function() { return api_url; });\nvar api_url = \"http://159.89.102.25:6666\";\n\n//# sourceURL=webpack:///./src/Requests/api_url.js?");
 
 /***/ }),
 
