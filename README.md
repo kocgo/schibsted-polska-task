@@ -47,7 +47,7 @@ Install dependencies
 npm install
 ```
 
-To start API:
+To start API (currently working on nginx and pm2):
 ```
 node index.js
 ```
