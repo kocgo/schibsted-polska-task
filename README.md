@@ -12,29 +12,31 @@ then started with creating the development environment for the React application
 
 ### Setup Project
 
-- React Application (in the react-app folder)
-Install dependencies
+- React Application (in the react-app folder)  
+
+_Install dependencies_
 ```
 npm install
 ```
 
-To start react app in development mode (watchs files):
+_Start react app in development mode (watchs files)_
 ```
 npm run dev
 ```
 
-To build react app (only builds the files in /dist folder, also copies the dist into /docs folder)
+_Just build react app (only builds the files in /dist folder, also copies the dist into /docs folder)_
 ```
 npm run build
 ```
 
-- API Nodejs Application (in the api folder)
-Install dependencies
+- API Nodejs Application (in the api folder)  
+
+_Install dependencies_
 ```
 npm install
 ```
 
-To start API (currently working on nginx and pm2):
+_Start API (currently working on nginx and pm2)_
 ```
 node index.js
 ```
