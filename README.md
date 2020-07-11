@@ -8,20 +8,7 @@ API: www.gokhankoc.pl/schibstedtask/searchImages?searchTerm=sauce
 I have created tasks on this readme file ,
 then started with creating the development environment for the React application.
 
-### Testing
-The testing suite is ready but more time is required for test-per-component approach.
 
-I have put basic tests into each application.
-
-React App Tests (watch mode):
-```
-npm run test
-```
-
-API Tests (watch mode):
-```
-npm run test
-```
 
 ### Setup Project
 
@@ -54,6 +41,21 @@ node index.js
 
 
 Also I have left the .env file visible for this particular task while being aware it shouldn't be in the repository in a prod environment.
+
+### Testing
+The testing suite is ready but more time is required for test-per-component approach.
+
+I have put basic tests into each application.
+
+React App Tests (watch mode):
+```
+npm run test
+```
+
+API Tests (watch mode):
+```
+npm run test
+```
 
 ### Challenges
 I tried to get InfiniteLoader work (which was the most challenging part), but failed, I have ran into closure problems with the hooks. Found a solution already on a blog post (it is in the InfiniteLoader component)
