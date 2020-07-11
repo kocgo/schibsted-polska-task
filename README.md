@@ -12,7 +12,7 @@ then started with creating the development environment for the React application
 
 ### Setup Project
 
-#### React Application (in the react-app folder)
+- React Application (in the react-app folder)
 Install dependencies
 ```
 npm install
@@ -28,7 +28,7 @@ To build react app (only builds the files in /dist folder, also copies the dist 
 npm run build
 ```
 
-#### API Nodejs Application (in the api folder)
+- API Nodejs Application (in the api folder)
 Install dependencies
 ```
 npm install
