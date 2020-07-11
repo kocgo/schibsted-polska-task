@@ -10,11 +10,11 @@ Also I have left the .env file visible for this particular task while being awar
 
 I have deployed the API on my own server with nginx and deployed the react-app on github-pages.
 
-I tried to get InfiniteLoader work, but failed, I have ran into closure problems with the hooks. Found a solution already on a blog post (it is in the InfiniteLoader component)
+Example API: www.gokhankoc.pl/schibstedtask/searchImages?searchTerm=sauce
 
-Most challenging part was the reverse proxying the nginx and InfiniteLoader.
+I tried to get InfiniteLoader work (which was the most challenging part), but failed, I have ran into closure problems with the hooks. Found a solution already on a blog post (it is in the InfiniteLoader component)
 
-Example: www.gokhankoc.pl/schibstedtask/searchImages?searchTerm=sauce
+
  
 1) Create Webpack Workflow
    - [x] Webpack, webpack dev server install and setup script
