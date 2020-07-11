@@ -11,7 +11,48 @@ then started with creating the development environment for the React application
 ### Testing
 The testing suite is ready but more time is required for test-per-component approach.
 
+I have put basic tests into each application.
+
+React App Tests (watch mode):
+```
+npm run test
+```
+
+API Tests (watch mode):
+```
+npm run test
+```
+
 ### Setup Project
+
+#### React Application (in the react-app folder)
+Install dependencies
+```
+npm install
+```
+
+To start react app in development mode (watchs files):
+```
+npm run dev
+```
+
+To build react app (only builds the files in /dist folder, also copies the dist into /docs folder)
+```
+npm run build
+```
+
+#### API Nodejs Application (in the api folder)
+Install dependencies
+```
+npm install
+```
+
+To start API:
+```
+node index.js
+```
+
+
 Also I have left the .env file visible for this particular task while being aware it shouldn't be in the repository in a prod environment.
 
 ### Challenges
