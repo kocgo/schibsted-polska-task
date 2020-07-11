@@ -10,9 +10,7 @@ then started with creating the development environment for the React application
 
 
 
-### Setup Project
-
-- React Application (in the react-app folder)  
+### Setup React App (/react-app)
 
 _Install dependencies_
 ```
@@ -29,7 +27,7 @@ _Just build react app (only builds the files in /dist folder, also copies the di
 npm run build
 ```
 
-- API Nodejs Application (in the api folder)  
+### Setup API (/api)
 
 _Install dependencies_
 ```
@@ -40,7 +38,6 @@ _Start API (currently working on nginx and pm2)_
 ```
 node index.js
 ```
-
 
 Also I have left the .env file visible for this particular task while being aware it shouldn't be in the repository in a prod environment.
 
