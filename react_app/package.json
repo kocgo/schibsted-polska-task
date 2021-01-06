@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-react-css-modules": "^5.2.6",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
